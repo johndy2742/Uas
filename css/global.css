@@ -342,8 +342,6 @@ section{
     line-height: 1.7;
 }
 
-
-
 .icons{
     display: flex;
     padding: 15px 0;
@@ -400,4 +398,16 @@ section{
     .icons li i{
         font-size: 15px;
     }
+}
+
+
+.footer {
+  padding-top: 15px;
+   height: 50px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
 }
