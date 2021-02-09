@@ -7,7 +7,7 @@
 header{
   overflow: hidden;
   background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/pic1.jpg);
-  height: 50em;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,11 +40,12 @@ header{
   transform: translate(-50%,50%);
 	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation-delay: 0.3s;
+  font-size: 40px;
+ color: #fff;
 }
 
- p{
-   font-size: 40px;
-  color: #fff;
+ .p{
+
 }
 
 .btn{
@@ -126,4 +127,35 @@ header{
     filter: blur(0);
     opacity: 1;
   }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .text-focus-in{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 35px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 1000px){
+  .btn1{
+  font-size:30px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .slide-in-blurred-left{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+
+  }
+}
+
+@media screem and (max-width: 1000px) {
+  header{
+    height: :100vh;
+  }
+
 }
