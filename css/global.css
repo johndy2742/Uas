@@ -8,38 +8,72 @@ header{
   overflow: hidden;
 }
 
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    right: 0px;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    z-index: 10;
+}
+.menu {
+    margin: 0 30px 0 0;
+    z-index: 10;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #aaaaaa;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+
+}
+
 #service{
   display:flex;
   justify-content: center;
 }
-.nav ul{
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  right: 0px;
-  list-style: none;
-  margin-top: 20px;
-  margin-right: 20px;
-  z-index: 4;
-}
 
-.navul li{
-  display: inline-block;
-}
-
-.nav ul li a{
-  width: 100%;
-  text-decoration: none;
-  color: #726667;
-  font-weight: bolder;
-  padding: 5px 20px;
-  transition: 0.9s ease;
-}
-
-.nav ul li a:hover{
-  background-color: #fff;
-  color: #000;
-}
 
 .main{
   display: flex;
@@ -321,6 +355,7 @@ section{
     opacity: 0.95;
 }
 .content h2{
+    padding-top: 20px;
     text-transform: uppercase;
     font-size: 36px;
     letter-spacing: 6px;
@@ -361,6 +396,12 @@ section{
 
 .fa.fa-whatsapp{
   font-size: 50px;
+  padding-bottom: 50px;
+}
+
+.fa.fa-telegram{
+  font-size: 50px;
+  padding-bottom: 50px;
 }
 
 /*****************/
@@ -374,11 +415,11 @@ section{
         height: 100vh;
     }
     .content{
-        height: 100vh;
+        height: 200vh;
     }
     .content h2{
         font-size: 20px;
-        margin-top: 50px;
+        margin-top: 50px;;
     }
     .content span{
         margin: 20px 0;
